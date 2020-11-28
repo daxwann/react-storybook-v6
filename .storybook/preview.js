@@ -1,8 +1,9 @@
 import React from "react";
-import { addDecorator } from "@storybook/react";
+import { addDecorator, addParameters } from "@storybook/react";
 import Center from "../src/components/Center/Center";
 import { ChakraProvider, theme } from "@chakra-ui/react";
-import { withConsole } from '@storybook/addon-console'
+import { withConsole } from '@storybook/addon-console';
+import { withA11y} from '@storybook/addon-a11y';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
